@@ -54,3 +54,5 @@ To copy a file to nginx in a docker instance you can use the command:
 docker cp [path to file] [docker container id]:[path to destination]
 ```
 I copied over `index.html` and if all goes well you should see a heading, a line of text and an image!
+
+You may preview the page [here](http://monotiller.github.io/engineering89_docker)
