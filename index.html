@@ -1,5 +1,149 @@
-<h1>The nginx about me</h1>
-Just a quick about me, this will replace the default nginx page.
+<!DOCTYPE html>
+<html lang="en" >
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Aman</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
+html {
+	font-family: 'Quicksand', sans-serif;
+	background: #000;
+}
 
-Here's a picture of my dog from an external site:
-<img src="https://i.imgur.com/Tnnu3zm.jpg" style="width: 100%;">
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 2em;
+	color: #EFB730;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+}
+
+main > .intro {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main > .tagline {
+	font-size: 1.3rem;
+	margin: 1.0rem 0;
+	font-weight: 100;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
+}
+.user-tags {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+}
+.user-tags .tag {
+    display: inline-block;
+    font-size: 10pt;
+    text-transform: lowercase;
+    color: #EFB730;
+    background: rgba(255,255,255,.07);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+}
+#avatar {
+        overflow: hidden;
+      width:164px;
+      height:164px;
+      top:20%;
+      left:calc(50% - 27px);
+      margin:-77px 0 0px -57px;
+      border-radius:100%;
+          box-shadow: 0 0 0 3px #EFB730;
+      background-size:contain;
+      position:absolute;
+      z-index:1;
+    }
+    #avatar img {
+      width:164px;
+      height:164px;
+    }
+
+    </style>
+</head>
+  
+<body>
+<main>
+  <div id="avatar"><img src="https://github.com/monotiller.png"></div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div class="tagline"><span style="color: #b3b3b3">DevOps Engineer</span>
+        </div>
+        
+        <div style="font-size: 12px; color: #fff; width: 500px; margin: 0 auto; "><img src="https://i.imgur.com/Tnnu3zm.jpg" style="width: 100%;"><br/><br/></div>
+        
+			<br/><br/>
+		<br/><br/>
+		<div class="icons-social">
+			<a target="_blank" href="https://linkedin.com/in/monotiller"><i class="fab fa-linkedin-in"></i></a>
+			<a target="_blank" href="https://twitter.com/monotiller"><i class="fab fa-twitter"></i></a>
+			<a target="_blank" href="https://instagram.com/monotiller"><i class="fab fa-instagram"></i></a>
+			<a target="_blank" href="https://github.com/monotiller"><i class="fab fa-github"></i></a>
+    </div>
+			<footer>
+			<ul class="user-tags">
+				<li class="tag">vagrant</li>
+				<li class="tag">terraform</li>
+				<li class="tag">aws</li>
+				<li class="tag">docker</li>
+				<li class="tag">python</li>
+			</ul>
+		</footer>
+	</main>
+</body>
+</html>
