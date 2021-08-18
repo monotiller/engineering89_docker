@@ -47,3 +47,10 @@ Some companies who are using Docker include:
 
 ## The reader should note
 Sometimes Docker doesn't run on Windows, so use: `alias docker="winpty docker"` to help with the association
+
+## Copying to ngnix
+To copy a file to nginx in a docker instance you can use the command:
+```console
+docker cp [path to file] [docker container id]:[path to destination]
+```
+I copied over `index.html` and if all goes well you should see a heading, a line of text and an image!
