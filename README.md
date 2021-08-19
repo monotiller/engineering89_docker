@@ -110,6 +110,6 @@ Run as normal!
 ## Volumes
 Volumes are a great way to sync changes between what's on your device and what's on the container. Syncing is done in real time!
 ```console
-docker run -d -v [FOLDER TO SYNC]:[LOCATION ON CONTAINER] [USERNAME]/[REPO NAME]
+docker run -d -v [FULL PATH TO FOLDER TO SYNC]:[LOCATION ON CONTAINER] [USERNAME]/[REPO NAME]
 ```
 `-v` means "volume" and is specifying you want to launch a volume
