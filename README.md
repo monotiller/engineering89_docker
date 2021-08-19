@@ -56,3 +56,12 @@ docker cp [path to file] [docker container id]:[path to destination]
 I copied over `index.html` and if all goes well you should see a heading, a line of text and an image!
 
 You may preview the page [here](http://monotiller.github.io/engineering89_docker)
+
+## Pushing to Docker hub
+You can push a container to Docker hub and it'll act like a repo. [Here's one](https://hub.docker.com/r/monotiller/engineering89_docker).
+- Commit a container: `docker commit [CONTAINER ID] [USERNAME]/[REPO NAME]:[TAG NAME]`. Note that if no tag name is given then `latest` will be added by default
+- To push to the hub: `docker push [USERNAME]/[REPO NAME]:[TAG NAME]`
+
+## Pulling from Docker hub
+- If you want to run straight away you can just use: `docker run [USERNAME]/[REPO NAME]:[TAG NAME]`
+- But you may also just pull: `docker pull [USERNAME]/[REPO NAME]:[TAG NAME]`
