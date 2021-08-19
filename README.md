@@ -65,3 +65,44 @@ You can push a container to Docker hub and it'll act like a repo. [Here's one](h
 ## Pulling from Docker hub
 - If you want to run straight away you can just use: `docker run [USERNAME]/[REPO NAME]:[TAG NAME]`
 - But you may also just pull: `docker pull [USERNAME]/[REPO NAME]:[TAG NAME]`
+
+## Creating a Dockerfile
+Building customised Docker images
+
+Build an image to automate the tasks to launch static website/page using nginx webserver with Docker
+
+- Use the official image nginx
+- `FROM` is the keyword to use the image
+    ```Dockerfile
+    FROM nginx
+    ```
+- Label it with your name or email
+- This is optional
+    ```Dockerfile
+    LABEL MAINTAINER=[NAME/EMAIL]
+    ```
+- Copy it over to the container
+- Copy the folder/file from localhost to the container
+- Copy the data as our index.html/app1
+    ```Dockerfile
+    COPY [FROM] [TO]
+    ```
+- Declare to use default port 80 for nginx
+    ```Dockerfile
+    EXPOSE 80
+    ```
+- CMD with the final command - example; `npm start`
+    ```Dockerfile
+    CMD [ "nginx", "-g", "daemon off;" ]
+    ```
+- We get this from the official image of nginx
+
+### Building
+Then to build it we simply do:
+```console
+docker build -t [USERNAME]/[REPO NAME] .
+```
+The `.` is important as it means "use the Dockerfile in the local repository"
+
+### Running
+Run as normal! 
