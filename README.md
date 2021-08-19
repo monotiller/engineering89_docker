@@ -105,4 +105,11 @@ docker build -t [USERNAME]/[REPO NAME] .
 The `.` is important as it means "use the Dockerfile in the local repository"
 
 ### Running
-Run as normal! 
+Run as normal!
+
+## Volumes
+Volumes are a great way to sync changes between what's on your device and what's on the container. Syncing is done in real time!
+```console
+docker run -d -v [FOLDER TO SYNC]:[LOCATION ON CONTAINER] [USERNAME]/[REPO NAME]
+```
+`-v` means "volume" and is specifying you want to launch a volume
